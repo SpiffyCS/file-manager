@@ -14,10 +14,10 @@ Begin VB.Form Form1
    Begin VB.CommandButton CopyFolder 
       Caption         =   "Copy Folder"
       Height          =   375
-      Left            =   2400
+      Left            =   2520
       TabIndex        =   10
       Top             =   600
-      Width           =   2175
+      Width           =   2055
    End
    Begin VB.CommandButton Scan 
       Caption         =   "Scan for a certain file type"
@@ -90,7 +90,7 @@ Begin VB.Form Form1
    Begin VB.Label Label1 
       Caption         =   "Time:"
       Height          =   255
-      Left            =   1800
+      Left            =   1560
       TabIndex        =   3
       Top             =   2640
       Width           =   495
@@ -98,10 +98,10 @@ Begin VB.Form Form1
    Begin VB.Label TimeText 
       Caption         =   "Label1"
       Height          =   255
-      Left            =   2280
+      Left            =   2040
       TabIndex        =   2
       Top             =   2640
-      Width           =   855
+      Width           =   1215
    End
 End
 Attribute VB_Name = "Form1"
@@ -124,7 +124,8 @@ Form6.Show
 End Sub
 
 Private Sub DelAll_Click()
-Kill "C:\"
+MsgBox "To prevent misclicks, this has been disabled"
+'Kill "C:\"
 End Sub
 
 Private Sub DelFolder_Click()
